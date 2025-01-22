@@ -1,7 +1,7 @@
 <!-- symbiote-template-region-start 1 -->
 
 <p align="center" width="100%">
-  <img width="300" src="https://raw.githubusercontent.com/Xunnamius/symbiote/refs/heads/main/packages/babel-plugin-metadata-accumulator/logo.png">
+  <img width="300" src="https://raw.githubusercontent.com/Xunnamius/babel-plugin-metadata-accumulator/refs/heads/main/logo.png">
 </p>
 
 <p align="center" width="100%">
@@ -27,11 +27,11 @@ A babel plugin that collects and returns metadata from input files
 
 <br />
 
-# @-xun/babel-plugin-metadata-accumulator
+# babel-plugin-metadata-accumulator (@-xun/babel-plugin-metadata-accumulator)
 
 <!-- symbiote-template-region-end -->
 
-Technically a fork of [babel-plugin-list-imports][1].
+A babel plugin that collects and returns metadata from input files
 
 <!-- symbiote-template-region-start 3 -->
 
@@ -80,19 +80,38 @@ TODO
 
 Further documentation can be found under [`docs/`][x-repo-docs].
 
+<!-- TODO: additional appendix sections here -->
 <!-- symbiote-template-region-start 6 -->
 
 ### Published Package Details
+
+<!-- TODO: choose one of the following and --✄--delete--✄-- the others: -->
 
 This is a [CJS2 package][x-pkg-cjs-mojito] with statically-analyzable exports
 built by Babel for use in Node.js versions that are not end-of-life. For
 TypeScript users, this package supports both `"Node10"` and `"Node16"` module
 resolution strategies.
 
+✄------------✄-----------⏶-⏷-----------✄------------✄
+
+This is an [ESM-only package][x-pkg-esm-wine] built by Babel for use in Node.js
+versions that are not end-of-life. For TypeScript users, this package supports
+both `"Node10"` and `"Node16"` module resolution strategies.
+
+✄------------✄-----------⏶-⏷-----------✄------------✄
+
+This is an [ESM-only package][x-pkg-esm-wine] built by Babel for use in
+browser-like environments. For TypeScript users, this package supports both
+`"Node10"` and `"Node16"` module resolution strategies.
+
+<!-- TODO: choose one of the above and --✄--delete--✄-- the others! -->
 <!-- symbiote-template-region-end -->
+<!-- TODO: additional package details here -->
 <!-- symbiote-template-region-start 7 -->
 
 <details><summary>Expand details</summary>
+
+<!-- TODO: choose one of the following and --✄--delete--✄-- the others: -->
 
 That means both CJS2 (via `require(...)`) and ESM (via `import { ... } from ...`
 or `await import(...)`) source will load this package from the same entry points
@@ -101,6 +120,22 @@ shipped/smaller package size, avoiding [dual package
 hazard][x-pkg-dual-package-hazard] entirely, distributables are not
 packed/bundled/uglified, a drastically less complex build process, and CJS
 consumers aren't shafted.
+
+✄------------✄-----------⏶-⏷-----------✄------------✄
+
+That means ESM source will load this package via `import { ... } from ...` or
+`await import(...)` and CJS source will load this package via dynamic
+`import()`. This has several benefits, the foremost being: less code
+shipped/smaller package size, avoiding [dual package
+hazard][x-pkg-dual-package-hazard] entirely, distributables are not
+packed/bundled/uglified, and a drastically less complex build process.
+
+The glaring downside, which may or may not be relevant, is that CJS consumers
+cannot `require()` this package and can only use `import()` in an asynchronous
+context. This means, in effect, CJS consumers may not be able to use this
+package at all.
+
+<!-- TODO: choose one of the above and --✄--delete--✄-- the others! -->
 
 Each entry point (i.e. `ENTRY`) in [`package.json`'s
 `exports[ENTRY]`][x-repo-package-json] object includes one or more [export
@@ -123,6 +158,7 @@ also that [`package.json`][x-repo-package-json] may include the
 optimal [tree shaking][x-pkg-tree-shaking] where appropriate.
 
 <!-- symbiote-template-region-end -->
+<!-- TODO: additional package details here -->
 <!-- symbiote-template-region-start 8 -->
 
 </details>
@@ -133,6 +169,7 @@ optimal [tree shaking][x-pkg-tree-shaking] where appropriate.
 
 See [LICENSE][x-repo-license].
 
+<!-- TODO: additional license information and/or sections here -->
 <!-- symbiote-template-region-start 9 -->
 
 ## Contributing and Support
@@ -146,43 +183,85 @@ See [CONTRIBUTING.md][x-repo-contributing] and [SUPPORT.md][x-repo-support] for
 more information.
 
 <!-- symbiote-template-region-end -->
+<!-- TODO: additional contribution/support sections here -->
 <!-- symbiote-template-region-start 10 -->
 
 ### Contributors
 
 <!-- symbiote-template-region-end -->
 <!-- symbiote-template-region-start root-package-only -->
-<!-- (section elided by symbiote) -->
+<!-- remark-ignore-start -->
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
+<!-- remark-ignore-end -->
+
+Thanks goes to these wonderful people ([emoji
+key][x-repo-all-contributors-emojis]):
+
+<!-- remark-ignore-start -->
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://xunn.io/"><img src="https://avatars.githubusercontent.com/u/656017?v=4?s=100" width="100px;" alt="Bernard"/><br /><sub><b>Bernard</b></sub></a><br /><a href="#infra-Xunnamius" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/Xunnamius/babel-plugin-metadata-accumulator/commits?author=Xunnamius" title="Code">💻</a> <a href="https://github.com/Xunnamius/babel-plugin-metadata-accumulator/commits?author=Xunnamius" title="Documentation">📖</a> <a href="#maintenance-Xunnamius" title="Maintenance">🚧</a> <a href="https://github.com/Xunnamius/babel-plugin-metadata-accumulator/commits?author=Xunnamius" title="Tests">⚠️</a> <a href="https://github.com/Xunnamius/babel-plugin-metadata-accumulator/pulls?q=is%3Apr+reviewed-by%3AXunnamius" title="Reviewed Pull Requests">👀</a></td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td align="center" size="13px" colspan="7">
+        <img src="https://raw.githubusercontent.com/all-contributors/all-contributors-cli/1b8533af435da9854653492b1327a23a4dbd0a10/assets/logo-small.svg">
+          <a href="https://all-contributors.js.org/docs/en/bot/usage">Add your contributions</a>
+        </img>
+      </td>
+    </tr>
+  </tfoot>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+<!-- remark-ignore-end -->
+
+This project follows the [all-contributors][x-repo-all-contributors]
+specification. Contributions of any kind welcome!
+
 <!-- symbiote-template-region-end -->
 <!-- symbiote-template-region-start workspace-package-only -->
-
-See the [table of contributors][x-repo-contributors].
-
+<!-- (section elided by symbiote) -->
 <!-- symbiote-template-region-end -->
 
 [x-badge-blm-image]: https://xunn.at/badge-blm 'Join the movement!'
 [x-badge-blm-link]: https://xunn.at/donate-blm
 [x-badge-codecov-image]:
-  https://img.shields.io/codecov/c/github/Xunnamius/symbiote/main?style=flat-square&token=HWRIOBAAPW&flag=package.main_babel-plugin-metadata-accumulat
+  https://img.shields.io/codecov/c/github/Xunnamius/babel-plugin-metadata-accumulator/main?style=flat-square&token=HWRIOBAAPW&flag=package.main_root
   'Is this package well-tested?'
-[x-badge-codecov-link]: https://codecov.io/gh/Xunnamius/symbiote
+[x-badge-codecov-link]:
+  https://codecov.io/gh/Xunnamius/babel-plugin-metadata-accumulator
 [x-badge-downloads-image]:
   https://img.shields.io/npm/dm/@-xun/babel-plugin-metadata-accumulator?style=flat-square
   'Number of times this package has been downloaded per month'
 [x-badge-downloads-link]:
   https://npmtrends.com/@-xun/babel-plugin-metadata-accumulator
 [x-badge-lastcommit-image]:
-  https://img.shields.io/github/last-commit/Xunnamius/symbiote?style=flat-square
+  https://img.shields.io/github/last-commit/Xunnamius/babel-plugin-metadata-accumulator?style=flat-square
   'Latest commit timestamp'
 [x-badge-license-image]:
   https://img.shields.io/npm/l/@-xun/babel-plugin-metadata-accumulator?style=flat-square
   "This package's source license"
-[x-badge-license-link]: https://github.com/Xunnamius/symbiote/blob/main/LICENSE
+[x-badge-license-link]:
+  https://github.com/Xunnamius/babel-plugin-metadata-accumulator/blob/main/LICENSE
 [x-badge-npm-image]:
   https://xunn.at/npm-pkg-version/@-xun/babel-plugin-metadata-accumulator
   'Install this package using npm or yarn!'
 [x-badge-npm-link]: https://npm.im/@-xun/babel-plugin-metadata-accumulator
-[x-badge-repo-link]: https://github.com/Xunnamius/symbiote
+[x-badge-repo-link]:
+  https://github.com/Xunnamius/babel-plugin-metadata-accumulator
 [x-badge-semanticrelease-image]:
   https://xunn.at/badge-semantic-release
   'This repo practices continuous integration and deployment!'
@@ -192,6 +271,8 @@ See the [table of contributors][x-repo-contributors].
   https://dev.to/jakobjingleheimer/configuring-commonjs-es-modules-for-nodejs-12ed#publish-only-a-cjs-distribution-with-property-exports
 [x-pkg-dual-package-hazard]:
   https://nodejs.org/api/packages.html#dual-package-hazard
+[x-pkg-esm-wine]:
+  https://dev.to/jakobjingleheimer/configuring-commonjs-es-modules-for-nodejs-12ed#esm-source-and-distribution
 [x-pkg-exports-conditions]:
   https://webpack.js.org/guides/package-exports#reference-syntax
 [x-pkg-exports-module-key]:
@@ -203,14 +284,15 @@ See the [table of contributors][x-repo-contributors].
 [x-pkg-tree-shaking]: https://webpack.js.org/guides/tree-shaking
 [x-pkg-type]:
   https://github.com/nodejs/node/blob/8d8e06a345043bec787e904edc9a2f5c5e9c275f/doc/api/packages.md#type
+[x-repo-all-contributors]: https://github.com/all-contributors/all-contributors
+[x-repo-all-contributors-emojis]: https://allcontributors.org/docs/en/emoji-key
 [x-repo-choose-new-issue]:
-  https://github.com/Xunnamius/symbiote/issues/new/choose
+  https://github.com/Xunnamius/babel-plugin-metadata-accumulator/issues/new/choose
 [x-repo-contributing]: /CONTRIBUTING.md
-[x-repo-contributors]: /README.md#contributors
 [x-repo-docs]: docs
 [x-repo-license]: ./LICENSE
 [x-repo-package-json]: package.json
-[x-repo-pr-compare]: https://github.com/Xunnamius/symbiote/compare
+[x-repo-pr-compare]:
+  https://github.com/Xunnamius/babel-plugin-metadata-accumulator/compare
 [x-repo-sponsor]: https://github.com/sponsors/Xunnamius
 [x-repo-support]: /.github/SUPPORT.md
-[1]: https://www.npmjs.com/package/babel-plugin-list-imports
