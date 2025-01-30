@@ -10,12 +10,9 @@ import {
 
 import { type Binding, type Scope } from '@babel/traverse';
 
-import {
-  toAbsolutePath,
-  type AbsolutePath
-} from 'multiverse+project-utils:fs/common.ts';
+import { toAbsolutePath, type AbsolutePath } from '@-xun/fs';
 
-import { ErrorMessage } from 'universe+babel-plugin-metadata-accumulator:error.ts';
+import { ErrorMessage } from 'universe:error.ts';
 
 import type { EmptyObject } from 'type-fest';
 
