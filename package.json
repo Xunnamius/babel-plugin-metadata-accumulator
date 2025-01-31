@@ -78,7 +78,7 @@
     "type-fest": "^4.33.0"
   },
   "devDependencies": {
-    "@-xun/symbiote": "^2.17.1",
+    "@-xun/symbiote": "^2.18.0",
     "@babel/traverse": "^7.26.7"
   },
   "engines": {
