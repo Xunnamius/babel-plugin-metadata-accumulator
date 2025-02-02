@@ -1,11 +1,8 @@
-import { ErrorMessage as UpstreamErrorMessage } from '@-xun/project/error';
-
 /**
  * A collection of possible error and warning messages.
  */
 /* istanbul ignore next */
 export const ErrorMessage = {
-  ...UpstreamErrorMessage,
   GuruMeditation() {
     return 'an impossible scenario occurred';
   },

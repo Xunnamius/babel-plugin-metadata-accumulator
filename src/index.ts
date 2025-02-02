@@ -1,6 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unnecessary-condition */
 import assert from 'node:assert';
 
+import { toAbsolutePath, type AbsolutePath } from '@-xun/fs';
+
 import {
   types as util,
   type NodePath,
@@ -9,8 +11,6 @@ import {
 } from '@babel/core';
 
 import { type Binding, type Scope } from '@babel/traverse';
-
-import { toAbsolutePath, type AbsolutePath } from '@-xun/fs';
 
 import { ErrorMessage } from 'universe:error.ts';
 
