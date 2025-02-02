@@ -8,6 +8,6 @@
 
 > **Options**: `EmptyObject`
 
-Defined in: [src/index.ts:48](https://github.com/Xunnamius/babel-plugin-metadata-accumulator/blob/834cd6171b06ba444ef3659b0f9b36ab753b30e4/src/index.ts#L48)
+Defined in: [src/index.ts:48](https://github.com/Xunnamius/babel-plugin-metadata-accumulator/blob/1cb7c85862a6dd782a6e2b7aca80332634e6af1b/src/index.ts#L48)
 
 The options that can be passed to this plugin from babel.
