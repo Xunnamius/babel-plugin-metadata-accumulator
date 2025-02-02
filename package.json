@@ -70,6 +70,7 @@
     "test:packages:all": "symbiote test --env NODE_NO_WARNINGS=1 --scope unlimited --coverage"
   },
   "dependencies": {
+    "@-xun/fs": "^1.0.0",
     "@babel/core": "^7.26.7",
     "core-js": "^3.40.0",
     "jsonc-parser": "^3.3.1",
@@ -78,7 +79,7 @@
     "type-fest": "^4.33.0"
   },
   "devDependencies": {
-    "@-xun/symbiote": "^2.18.0",
+    "@-xun/symbiote": "^2.18.1",
     "@babel/traverse": "^7.26.7"
   },
   "engines": {
