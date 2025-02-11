@@ -8,7 +8,7 @@
 
 > **createMetadataAccumulatorPlugin**(): [`PluginAndAccumulator`](../type-aliases/PluginAndAccumulator.md)
 
-Defined in: [src/index.ts:62](https://github.com/Xunnamius/babel-plugin-metadata-accumulator/blob/1cb7c85862a6dd782a6e2b7aca80332634e6af1b/src/index.ts#L62)
+Defined in: [src/index.ts:57](https://github.com/Xunnamius/babel-plugin-metadata-accumulator/blob/ca3a4df0e6412657dbf19953fc49fceb9b33736d/src/index.ts#L57)
 
 Create and return a metadata accumulator plugin and corresponding object
 containing all accumulated metadata.

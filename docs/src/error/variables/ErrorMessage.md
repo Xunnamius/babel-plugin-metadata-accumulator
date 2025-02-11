@@ -8,7 +8,7 @@
 
 > `const` **ErrorMessage**: `object`
 
-Defined in: [src/error.ts:5](https://github.com/Xunnamius/babel-plugin-metadata-accumulator/blob/1cb7c85862a6dd782a6e2b7aca80332634e6af1b/src/error.ts#L5)
+Defined in: [src/error.ts:5](https://github.com/Xunnamius/babel-plugin-metadata-accumulator/blob/ca3a4df0e6412657dbf19953fc49fceb9b33736d/src/error.ts#L5)
 
 A collection of possible error and warning messages.
 

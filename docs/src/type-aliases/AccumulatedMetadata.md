@@ -8,7 +8,7 @@
 
 > **AccumulatedMetadata**: `object`
 
-Defined in: [src/index.ts:21](https://github.com/Xunnamius/babel-plugin-metadata-accumulator/blob/1cb7c85862a6dd782a6e2b7aca80332634e6af1b/src/index.ts#L21)
+Defined in: [src/index.ts:16](https://github.com/Xunnamius/babel-plugin-metadata-accumulator/blob/ca3a4df0e6412657dbf19953fc49fceb9b33736d/src/index.ts#L16)
 
 ## Type declaration
 

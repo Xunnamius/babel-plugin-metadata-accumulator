@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-metadata-accumulator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A babel plugin that collects and returns metadata from input files",
   "keywords": [
     "babel",
