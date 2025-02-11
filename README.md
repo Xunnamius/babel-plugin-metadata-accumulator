@@ -63,7 +63,7 @@ A babel plugin that collects and returns metadata from input files.
 To install:
 
 ```shell
-npm install @-xun/babel-plugin-metadata-accumulator
+npm install babel-plugin-metadata-accumulator
 ```
 
 ## Usage
@@ -211,22 +211,22 @@ specification. Contributions of any kind welcome!
 [x-badge-codecov-link]:
   https://codecov.io/gh/Xunnamius/babel-plugin-metadata-accumulator
 [x-badge-downloads-image]:
-  https://img.shields.io/npm/dm/@-xun/babel-plugin-metadata-accumulator?style=flat-square
+  https://img.shields.io/npm/dm/babel-plugin-metadata-accumulator?style=flat-square
   'Number of times this package has been downloaded per month'
 [x-badge-downloads-link]:
-  https://npmtrends.com/@-xun/babel-plugin-metadata-accumulator
+  https://npmtrends.com/babel-plugin-metadata-accumulator
 [x-badge-lastcommit-image]:
   https://img.shields.io/github/last-commit/Xunnamius/babel-plugin-metadata-accumulator?style=flat-square
   'Latest commit timestamp'
 [x-badge-license-image]:
-  https://img.shields.io/npm/l/@-xun/babel-plugin-metadata-accumulator?style=flat-square
+  https://img.shields.io/npm/l/babel-plugin-metadata-accumulator?style=flat-square
   "This package's source license"
 [x-badge-license-link]:
   https://github.com/Xunnamius/babel-plugin-metadata-accumulator/blob/main/LICENSE
 [x-badge-npm-image]:
-  https://xunn.at/npm-pkg-version/@-xun/babel-plugin-metadata-accumulator
+  https://xunn.at/npm-pkg-version/babel-plugin-metadata-accumulator
   'Install this package using npm or yarn!'
-[x-badge-npm-link]: https://npm.im/@-xun/babel-plugin-metadata-accumulator
+[x-badge-npm-link]: https://npm.im/babel-plugin-metadata-accumulator
 [x-badge-repo-link]:
   https://github.com/Xunnamius/babel-plugin-metadata-accumulator
 [x-badge-semanticrelease-image]:
