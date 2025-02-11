@@ -1,19 +1,14 @@
 /* eslint-disable @typescript-eslint/no-unnecessary-condition */
 import assert from 'node:assert';
 
-import { toAbsolutePath, type AbsolutePath } from '@-xun/fs';
-
-import {
-  types as util,
-  type NodePath,
-  type PluginObj,
-  type PluginPass
-} from '@babel/core';
-
-import { type Binding, type Scope } from '@babel/traverse';
+import { toAbsolutePath } from '@-xun/fs';
+import { types as util } from '@babel/core';
 
 import { ErrorMessage } from 'universe:error.ts';
 
+import type { AbsolutePath } from '@-xun/fs';
+import type { NodePath, PluginObj, PluginPass } from '@babel/core';
+import type { Binding, Scope } from '@babel/traverse';
 import type { EmptyObject } from 'type-fest';
 
 // TODO: turn this into an actual plugin package with tests
