@@ -73,7 +73,7 @@
   },
   "dependencies": {
     "@-xun/fs": "^2.0.0",
-    "@babel/core": "^7.26.9",
+    "@babel/core": "^7.28.3",
     "core-js": "^3.40.0",
     "type-fest": "^4.34.1"
   },
