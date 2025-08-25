@@ -2,7 +2,7 @@
 import assert from 'node:assert';
 
 import { toAbsolutePath } from '@-xun/fs';
-import { types as util } from '@babel/core';
+import { types as utility } from '@babel/core';
 
 import { ErrorMessage } from 'universe:error.ts';
 
@@ -130,15 +130,15 @@ export function createMetadataAccumulatorPlugin(): PluginAndAccumulator {
             if (firstArgument) {
               const { identifierName } = firstArgument.loc || {};
 
-              if (util.isStringLiteral(firstArgument)) {
+              if (utility.isStringLiteral(firstArgument)) {
                 addImportSpecifier('normal', state, firstArgument.value);
-              } else if (util.isIdentifier(firstArgument) && identifierName) {
+              } else if (utility.isIdentifier(firstArgument) && identifierName) {
                 const binding = getBinding(path.scope, identifierName);
 
                 if (
                   binding?.constant &&
-                  util.isVariableDeclarator(binding.path.node) &&
-                  util.isStringLiteral(binding.path.node.init)
+                  utility.isVariableDeclarator(binding.path.node) &&
+                  utility.isStringLiteral(binding.path.node.init)
                 ) {
                   addImportSpecifier('normal', state, binding.path.node.init.value);
                 }
@@ -182,7 +182,9 @@ export function createMetadataAccumulatorPlugin(): PluginAndAccumulator {
     kind: 'type-only' | 'normal',
     state: PluginPass,
     path: NodePath<
-      util.ImportDeclaration | util.ExportNamedDeclaration | util.ExportAllDeclaration
+      | utility.ImportDeclaration
+      | utility.ExportNamedDeclaration
+      | utility.ExportAllDeclaration
     >
   ) {
     const specifier = path.node.source?.value;
