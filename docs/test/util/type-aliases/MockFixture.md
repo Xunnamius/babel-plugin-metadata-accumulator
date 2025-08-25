@@ -6,40 +6,54 @@
 
 # Type Alias: MockFixture\<Name, Context\>
 
-> **MockFixture**\<`Name`, `Context`\>: `object`
+> **MockFixture**\<`Name`, `Context`\> = `object`
 
-Defined in: node\_modules/@-xun/test-mock-fixture/dist/packages/test-mock-fixture/src/types/fixtures.d.ts:20
+Defined in: node\_modules/@-xun/symbiote/node\_modules/@-xun/test-mock-fixture/dist/packages/test-mock-fixture/src/types/fixtures.d.ts:22
 
 An object describing a mock or "dummy" filesystem structure used to simulate
 one or more runtime environments for the package under test.
 
 ## Type Parameters
 
-• **Name** *extends* `string`
+### Name
 
-• **Context** *extends* [`GenericFixtureContext`](GenericFixtureContext.md)
+`Name` *extends* `string`
 
-## Type declaration
+### Context
+
+`Context`
+
+## Properties
 
 ### description
 
 > **description**: `string`
 
+Defined in: node\_modules/@-xun/symbiote/node\_modules/@-xun/test-mock-fixture/dist/packages/test-mock-fixture/src/types/fixtures.d.ts:34
+
 A short string output during debugging that describes what the fixture is
 doing.
+
+***
 
 ### name
 
 > **name**: `Name` \| `symbol`
+
+Defined in: node\_modules/@-xun/symbiote/node\_modules/@-xun/test-mock-fixture/dist/packages/test-mock-fixture/src/types/fixtures.d.ts:29
 
 An alphanumeric (including hyphens and underscores) string used to identify
 the fixture. This string _should_ be unique per fixture.
 
 Including invalid characters in the fixture name will cause an error.
 
-### setup?
+***
 
-> `optional` **setup**: [`FixtureAction`](FixtureAction.md)\<`Context`\>
+### setup()?
+
+> `optional` **setup**: (`context`) => `Promisable`\<`unknown`\>
+
+Defined in: node\_modules/@-xun/symbiote/node\_modules/@-xun/test-mock-fixture/dist/packages/test-mock-fixture/src/types/fixtures.d.ts:44
 
 An optional function that is run before the `test` function is invoked.
 
@@ -49,9 +63,23 @@ If this function throws, the error will bubble, preventing other fixtures
 If a fixture provides neither a `setup` nor `teardown` function, it is
 essentially a no-op.
 
-### teardown?
+#### Parameters
 
-> `optional` **teardown**: [`FixtureAction`](FixtureAction.md)\<`Context`\>
+##### context
+
+`Context`
+
+#### Returns
+
+`Promisable`\<`unknown`\>
+
+***
+
+### teardown()?
+
+> `optional` **teardown**: (`context`) => `Promisable`\<`unknown`\>
+
+Defined in: node\_modules/@-xun/symbiote/node\_modules/@-xun/test-mock-fixture/dist/packages/test-mock-fixture/src/types/fixtures.d.ts:59
 
 An optional function that is run after the `test` function completes.
 
@@ -65,3 +93,13 @@ function defined by a fixture will be the last `teardown` function to run.
 
 If a fixture provides neither a `setup` nor `teardown` function, it is
 essentially a no-op.
+
+#### Parameters
+
+##### context
+
+`Context`
+
+#### Returns
+
+`Promisable`\<`unknown`\>

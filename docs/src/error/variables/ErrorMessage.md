@@ -8,13 +8,15 @@
 
 > `const` **ErrorMessage**: `object`
 
-Defined in: [src/error.ts:5](https://github.com/Xunnamius/babel-plugin-metadata-accumulator/blob/ca3a4df0e6412657dbf19953fc49fceb9b33736d/src/error.ts#L5)
+Defined in: [src/error.ts:5](https://github.com/Xunnamius/babel-plugin-metadata-accumulator/blob/d33fcf6daecd44dbedd2bdc6645db1a0febccf9e/src/error.ts#L5)
 
 A collection of possible error and warning messages.
 
-## Type declaration
+## Type Declaration
 
 ### EncounteredEmptyImportCallExpression()
+
+> **EncounteredEmptyImportCallExpression**(`isRequire`): `string`
 
 #### Parameters
 
@@ -27,6 +29,8 @@ A collection of possible error and warning messages.
 `string`
 
 ### GuruMeditation()
+
+> **GuruMeditation**(): `string`
 
 #### Returns
 

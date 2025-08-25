@@ -6,8 +6,8 @@
 
 # Type Alias: Options
 
-> **Options**: `EmptyObject`
+> **Options** = `EmptyObject`
 
-Defined in: [src/index.ts:43](https://github.com/Xunnamius/babel-plugin-metadata-accumulator/blob/ca3a4df0e6412657dbf19953fc49fceb9b33736d/src/index.ts#L43)
+Defined in: [src/index.ts:41](https://github.com/Xunnamius/babel-plugin-metadata-accumulator/blob/d33fcf6daecd44dbedd2bdc6645db1a0febccf9e/src/index.ts#L41)
 
 The options that can be passed to this plugin from babel.

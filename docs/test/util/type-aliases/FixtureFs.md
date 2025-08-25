@@ -6,9 +6,9 @@
 
 # Type Alias: FixtureFs
 
-> **FixtureFs**: `object` & `Omit`\<*typeof* `fs`, `"constants"` \| `"glob"`\>
+> **FixtureFs** = `object` & `Omit`\<*typeof* `fs`, `"constants"` \| `"glob"`\>
 
-Defined in: node\_modules/@-xun/test-mock-fixture/dist/packages/test-mock-fixture/src/types/fixtures.d.ts:122
+Defined in: node\_modules/@-xun/symbiote/node\_modules/@-xun/test-mock-fixture/dist/packages/test-mock-fixture/src/types/fixtures.d.ts:126
 
 Context-sensitive asynchronous wrappers for `node:fs/promises` functions
 (excluding fs.glob) with in-build debugging and exception handling.
@@ -17,7 +17,7 @@ Note that all relative `PathLike` parameters are considered local to `root`,
 not the current working directory, and will be translated into
 AbsolutePaths as such.
 
-## Type declaration
+## Type Declaration
 
 ### isAccessible()
 

@@ -6,26 +6,29 @@
 
 # Type Alias: IsolatedImportOptions
 
-> **IsolatedImportOptions**: `object`
+> **IsolatedImportOptions** = `object`
 
-Defined in: node\_modules/@-xun/test-mock-import/dist/packages/test-mock-import/src/index.d.ts:5
+Defined in: node\_modules/@-xun/symbiote/node\_modules/@-xun/test-mock-import/dist/packages/test-mock-import/src/index.d.ts:12
 
-## Type declaration
+## See
 
-### useDefault?
+[isolatedImport](../functions/isolatedImport.md)
 
-> `optional` **useDefault**: `boolean`
+## Properties
 
-By default, if `module.__esModule === true`, the default export will be
-returned instead. Use `useDefault` to override this behavior in either
-direction.
+### reduceToDefault?
+
+> `optional` **reduceToDefault**: `boolean`
+
+Defined in: node\_modules/@-xun/symbiote/node\_modules/@-xun/test-mock-import/dist/packages/test-mock-import/src/index.d.ts:21
+
+By default, if `module.__esModule === true` and the only other property of
+`module.exports` is `"default"`, then said `"default"` export will be
+returned instead of a module object. Use `reduceToDefault` to override this
+behavior in either direction.
 
 #### Default
 
 ```ts
 undefined
 ```
-
-## See
-
-[isolatedImport](../functions/isolatedImport.md)

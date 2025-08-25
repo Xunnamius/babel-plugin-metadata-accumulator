@@ -6,24 +6,26 @@
 
 # Type Alias: AccumulatedMetadata
 
-> **AccumulatedMetadata**: `object`
+> **AccumulatedMetadata** = `object`
 
-Defined in: [src/index.ts:16](https://github.com/Xunnamius/babel-plugin-metadata-accumulator/blob/ca3a4df0e6412657dbf19953fc49fceb9b33736d/src/index.ts#L16)
+Defined in: [src/index.ts:14](https://github.com/Xunnamius/babel-plugin-metadata-accumulator/blob/d33fcf6daecd44dbedd2bdc6645db1a0febccf9e/src/index.ts#L14)
 
-## Type declaration
+## Properties
 
 ### imports
 
 > **imports**: `object`
 
+Defined in: [src/index.ts:20](https://github.com/Xunnamius/babel-plugin-metadata-accumulator/blob/d33fcf6daecd44dbedd2bdc6645db1a0febccf9e/src/index.ts#L20)
+
 Two sets, one containing the accumulated import metadata for all
 "type-only" imports and the other containing the same information but for
 all "normal" imports.
 
-#### imports.normal
+#### normal
 
 > **normal**: `Set`\<`string`\>
 
-#### imports.typeOnly
+#### typeOnly
 
 > **typeOnly**: `Set`\<`string`\>
