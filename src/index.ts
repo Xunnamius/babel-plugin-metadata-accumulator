@@ -11,8 +11,6 @@ import type { NodePath, PluginObj, PluginPass } from '@babel/core';
 import type { Binding, Scope } from '@babel/traverse';
 import type { EmptyObject } from 'type-fest';
 
-// TODO: turn this into an actual plugin package with tests
-
 export type AccumulatedMetadata = {
   /**
    * Two sets, one containing the accumulated import metadata for all
@@ -52,7 +50,7 @@ export type State = PluginPass & { opts: Options };
  * containing all accumulated metadata.
  *
  * If analyzing source with no originating file path, the accumulator will map
- * retain its metadata under the `"/dev/null"` key.
+ * its metadata under the `"/dev/null"` key.
  */
 export function createMetadataAccumulatorPlugin(): PluginAndAccumulator {
   const pluginAndAccumulator: PluginAndAccumulator = {
@@ -138,7 +136,7 @@ export function createMetadataAccumulatorPlugin(): PluginAndAccumulator {
                 const binding = getBinding(path.scope, identifierName);
 
                 if (
-                  binding.constant &&
+                  binding?.constant &&
                   util.isVariableDeclarator(binding.path.node) &&
                   util.isStringLiteral(binding.path.node.init)
                 ) {
@@ -192,7 +190,12 @@ export function createMetadataAccumulatorPlugin(): PluginAndAccumulator {
     addImportSpecifier(kind, state, specifier);
   }
 
-  function getBinding(scope: Scope, identifierName: string): Binding {
-    return scope.bindings[identifierName] || getBinding(scope.parent, identifierName);
+  function getBinding(
+    scope: Scope | undefined,
+    identifierName: string
+  ): Binding | undefined {
+    return scope
+      ? scope.bindings[identifierName] || getBinding(scope.parent, identifierName)
+      : undefined;
   }
 }
